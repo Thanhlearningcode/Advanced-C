@@ -15,11 +15,9 @@ What is Pointer?
                                                                                                           int *ptr =a;
                                                                                                           ptr=NULL;// Thu hồi con trỏ
  + Con trỏ đến con trỏ: Con trỏ có thể trỏ tới các con trỏ khác, tạo ra nhiều cấp độ gián tiếp, có ích trong các kịch bản lập trình phức tạp.
-   Ex: #include<stdio>
-       int main(){
-       int a=10;
-       int *ptr=
-   }
-     
+  ![image](https://github.com/user-attachments/assets/e0f86989-94ae-4f03-9e79-6367971c52f5)
+
+
+
       
                                                                                                           
