@@ -1,4 +1,4 @@
-# Advanced-C
+# Advanced C
 **Lesson 3: POINTER**
 
 What is Pointer?
