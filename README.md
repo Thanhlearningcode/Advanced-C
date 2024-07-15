@@ -1,5 +1,6 @@
 # Advanced-C
 Lesson 3: POINTER
+
 What is Pointer?
 - In the C programming language, a pointer is a variable that holds the memory address of another variable. The use of pointers allows us to perform operations on memory in a more flexible way. Here are some basic concepts about pointers in C:
   +  Khai báo con trỏ: Con trỏ được khai báo bằng cách sử dụng ký hiệu dấu sao (*) và chỉ ra rằng biến đó là một con trỏ đến một kiểu dữ liệu nhất định.Exp: int *ptr;
