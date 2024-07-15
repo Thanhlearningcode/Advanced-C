@@ -18,6 +18,8 @@ What is Pointer?
   ![image](https://github.com/user-attachments/assets/e0f86989-94ae-4f03-9e79-6367971c52f5)
 
   + Pointer to Constant: Đây là một loại con trỏ trong C mà không thể thay đổi giá trị của biến mà nó trỏ đến thông qua dereference (toán tử *), nhưng giá trị của biến đó có thể thay đổi bằng các phương thức khác (ví dụ: gán trực tiếp).
+ 
+    
 ![image](https://github.com/user-attachments/assets/c5cfa98c-f73a-404a-b8f2-1d31fa460daa)
 
   ![image](https://github.com/user-attachments/assets/a643507c-8a6b-4c9b-872f-0440e7051040)
