@@ -10,7 +10,7 @@ What is Pointer?
  ![image](https://github.com/user-attachments/assets/443fbf09-0e1e-4917-aa28-361cff156d48)
 
 
-  +  Con trỏ null: Con trỏ null là một giá trị đặc biệt chỉ ra rằng con trỏ không trỏ tới bất kỳ vị trí bộ nhớ hợp lệ nào.
+  +  **Con trỏ null:** Con trỏ null là một giá trị đặc biệt chỉ ra rằng con trỏ không trỏ tới bất kỳ vị trí bộ nhớ hợp lệ nào.
     EXP(quan trọng ): Giả sử không dùng free,smartpointer làm sao để thu hồi con trỏ đã cấp phát???? ->>> Int a=1;
                                                                                                           int *ptr =a;
                                                                                                           ptr=NULL;// Thu hồi con trỏ
