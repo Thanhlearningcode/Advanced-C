@@ -14,8 +14,11 @@ What is Pointer?
     EXP(quan trọng ): Giả sử không dùng free,smartpointer làm sao để thu hồi con trỏ đã cấp phát???? ->>> Int a=1;
                                                                                                           int *ptr =a;
                                                                                                           ptr=NULL;// Thu hồi con trỏ
- + **Con trỏ đến con trỏ**: Con trỏ có thể trỏ tới các con trỏ khác, tạo ra nhiều cấp độ gián tiếp, có ích trong các kịch bản lập trình phức tạp.
+  + **Con trỏ đến con trỏ**: Con trỏ có thể trỏ tới các con trỏ khác, tạo ra nhiều cấp độ gián tiếp, có ích trong các kịch bản lập trình phức tạp.
   ![image](https://github.com/user-attachments/assets/e0f86989-94ae-4f03-9e79-6367971c52f5)
+
+  + Pointer to Constant: Đây là một loại con trỏ trong C mà không thể thay đổi giá trị của biến mà nó trỏ đến thông qua dereference (toán tử *), nhưng giá trị của biến đó có thể thay đổi bằng các phương thức khác (ví dụ: gán trực tiếp).
+![image](https://github.com/user-attachments/assets/c5cfa98c-f73a-404a-b8f2-1d31fa460daa)
 
 
 
