@@ -1,9 +1,9 @@
-Lesson 3: POINTER
+**Lesson 3: POINTER**
 
 Trong ngôn ngữ lập trình C, con trỏ (pointer) là một biến chứa địa chỉ bộ nhớ của một biến khác. Việc sử dụng con trỏ giúp chúng ta thực hiện các thao tác trên bộ nhớ một cách linh hoạt hơn.
 Cách khai báo:      datatype * PointerName; 	
 
-A. Void Pointer
+**A. Void Pointer**
 Là một con trỏ đặc biệt có thể trỏ tới các đối tượng thuộc bất kỳ kiểu dữ liệu nào.
 Cách khai báo:      void *PointerName; 
 
@@ -13,7 +13,7 @@ Ex:
 
 ![image](https://github.com/user-attachments/assets/0f576021-96f4-4e89-986a-6753678b333f)
 
-C. Pointer to Constant
+**C. Pointer to Constant**
 Định nghĩa một con trỏ không thể thay đổi giá trị tại địa chỉ mà nó trỏ đến thông qua dereference nhưng giá trị tại địa chỉ đó có thể thay đổi.
 Cách khai báo:     int const *ptr_const;
 		     const int *ptr_const;
@@ -23,7 +23,7 @@ Ex:
 ![image](https://github.com/user-attachments/assets/6d1434c0-6047-49ad-83c3-137fd579ad15)
 
 
-D. Constant Pointer
+**D. Constant Pointer**
 Định nghĩa một con trỏ mà giá trị nó trỏ đến không thể thay đổi. 
 Cách khai báo:     int *const const_ptr = &value;
 Ex:
@@ -32,7 +32,7 @@ Ex:
 
 ![image](https://github.com/user-attachments/assets/4eacf2a5-c0f8-479c-91d2-8a60fb588409)
 
-B. Function Pointer
+**B. Function Pointer**
 Là một biến mà giữ địa chỉ của một hàm, nó trỏ đến vùng nhớ trong bộ nhớ chứa mã máy của hàm được định nghĩa trong chương trình.
 Cách khai báo:      <return_type>  (*<PointerName>)( <ParametersDataType> );
 Ex:
@@ -40,7 +40,7 @@ Ex:
 
 ![image](https://github.com/user-attachments/assets/555d5d2a-d4bd-4a0e-a31e-da696332cc9c)
 
-C. Pointer to Constant
+**C. Pointer to Constant**
 Định nghĩa một con trỏ không thể thay đổi giá trị tại địa chỉ mà nó trỏ đến thông qua dereference nhưng giá trị tại địa chỉ đó có thể thay đổi.
 Cách khai báo:     int const *ptr_const;
 		     const int *ptr_const;
@@ -48,7 +48,7 @@ Ex:
 ![image](https://github.com/user-attachments/assets/919b6f4f-44db-4a82-b136-71c0efdc07c2)
 ![image](https://github.com/user-attachments/assets/3a993a76-198c-4f3b-bc16-c0bfa1933fc2)
 
-D. Constant Pointer
+**D. Constant Pointer**
 Định nghĩa một con trỏ mà giá trị nó trỏ đến không thể thay đổi. 
 Cách khai báo:     int *const const_ptr = &value;
 Ex:
@@ -56,7 +56,7 @@ Ex:
 ![image](https://github.com/user-attachments/assets/e2471499-2f09-4856-bb82-481c0e71f156)
 ![image](https://github.com/user-attachments/assets/4355035e-2fb2-4e41-ab37-1afa7cf5a5e3)
 
-E. Pointer to Pointer
+**E. Pointer to Pointer**
 Là kiểu dữ liệu trong ngôn ngữ lập trình cho phép lưu trữ địa chỉ của một con trỏ	
 Cách khai báo: int *ptr = &test;
                              int **ptp = &ptr;
@@ -66,7 +66,7 @@ Ex:
 ![image](https://github.com/user-attachments/assets/ac773ace-dbda-41d2-942f-e79c7598ffd8)
 
 
-F. NULL Pointer
+**F. NULL Pointer**
 
 Là một con trỏ không trỏ đến bất kỳ đối tượng hoặc vùng nhớ cụ thể nào. Sử dụng null pointer thường hữu ích để kiểm tra xem một con trỏ đã được khởi tạo và có trỏ đến một vùng nhớ hợp lệ chưa.
 Ex:
