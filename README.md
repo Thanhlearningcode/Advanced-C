@@ -16,8 +16,8 @@ int main()
 	ptr = &char_var;
 	printf("%p\n", ptr);
 }
- 
- 
+![image](https://github.com/user-attachments/assets/f3e5ebdc-1214-4c39-aa59-8628784b40d8)
+
 B. Function Pointer
 Là một biến mà giữ địa chỉ của một hàm, nó trỏ đến vùng nhớ trong bộ nhớ chứa mã máy của hàm được định nghĩa trong chương trình.
 Cách khai báo:      <return_type>  (*<PointerName>)( <ParametersDataType> );
@@ -55,7 +55,8 @@ int main()
 	
 	return 0;
 }
- 
+![image](https://github.com/user-attachments/assets/db913b3a-02e7-41d7-9b08-e6202ad6e0f4)
+
 C. Pointer to Constant
 Định nghĩa một con trỏ không thể thay đổi giá trị tại địa chỉ mà nó trỏ đến thông qua dereference nhưng giá trị tại địa chỉ đó có thể thay đổi.
 Cách khai báo:     int const *ptr_const;
@@ -67,7 +68,7 @@ printf("value: %d\n", *ptr_const);
 value = 9;
 printf("value: %d\n", *ptr_const);
 return 0;
-
+![image](https://github.com/user-attachments/assets/59a2ea5c-a609-4c98-8e32-e7837eed938f)
 D. Constant Pointer
 Định nghĩa một con trỏ mà giá trị nó trỏ đến không thể thay đổi. 
 Cách khai báo:     int *const const_ptr = &value;
@@ -78,7 +79,7 @@ printf("value: %d\n", *const_ptr);
 *const_ptr = 7;
 printf("value: %d\n", *const_ptr);
 return 0;
- 
+![image](https://github.com/user-attachments/assets/caa5da23-c6b4-4525-ae82-75213f0ac6cf)
 E. Pointer to Pointer
 Là kiểu dữ liệu trong ngôn ngữ lập trình cho phép lưu trữ địa chỉ của một con trỏ	
 Cách khai báo: int *ptr = &test;
@@ -92,7 +93,7 @@ printf("Gia cua value: %d\n", *ptr);
 printf("Dia chi cua ptr: %p\n", ptp);
 printf("Gia cua ptr: %p\n", *ptp);
 return 0;
- 
+![image](https://github.com/user-attachments/assets/85c8af6d-da3b-4969-a146-01ebec68b565)
 F. NULL Pointer
 Là một con trỏ không trỏ đến bất kỳ đối tượng hoặc vùng nhớ cụ thể nào. Sử dụng null pointer thường hữu ích để kiểm tra xem một con trỏ đã được khởi tạo và có trỏ đến một vùng nhớ hợp lệ chưa.
 Ex:
@@ -103,5 +104,6 @@ if (ptr == NULL) {
 else {
 	printf("Pointer is not NULL\n");
 }
+
 
 
