@@ -16,6 +16,7 @@ int main()
 	ptr = &char_var;
 	printf("%p\n", ptr);
 }
+
 ![image](https://github.com/user-attachments/assets/f3e5ebdc-1214-4c39-aa59-8628784b40d8)
 
 B. Function Pointer
