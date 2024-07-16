@@ -6,6 +6,7 @@ Cách khai báo:      datatype * PointerName;
 A. Void Pointer
 Là một con trỏ đặc biệt có thể trỏ tới các đối tượng thuộc bất kỳ kiểu dữ liệu nào.
 Cách khai báo:      void *PointerName; 
+
 Ex:
 
 ![image](https://github.com/user-attachments/assets/2f983629-c064-408c-b717-b8f9b22d9594)
