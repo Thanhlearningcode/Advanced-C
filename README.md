@@ -5,23 +5,25 @@ A. Void Pointer
 Là một con trỏ đặc biệt có thể trỏ tới các đối tượng thuộc bất kỳ kiểu dữ liệu nào.
 Cách khai báo:      void *PointerName; 
 Ex:
-         #include <stdio.h>
-         #include<stdint.h>
-         int main()
-           {
-	 int int_var = 63;
-	 char char_var = 'f';
-	 void* ptr = &int_var;
-	 printf("%p\n", ptr);
-	 ptr = &char_var;
-	 printf("%p\n", ptr);
-        }
+#include <stdio.h>
+#include<stdint.h>
+int main()
+{
+int int_var = 63;
+char char_var = 'f';
+void* ptr = &int_var;
+printf("%p\n", ptr);
+ptr = &char_var;
+printf("%p\n", ptr);
+}
  
  
 B. Function Pointer
 Là một biến mà giữ địa chỉ của một hàm, nó trỏ đến vùng nhớ trong bộ nhớ chứa mã máy của hàm được định nghĩa trong chương trình.
 Cách khai báo:      <return_type>  (*<PointerName>)( <ParametersDataType> );
 Ex:
+
+
 void Tong(int a, int b)
 {
 	printf("Tong cua %d va %d la: %d\n", a, b, a + b);
@@ -59,6 +61,8 @@ int main()
 	
 	return 0;
 }
+
+
  
 C. Pointer to Constant
 Định nghĩa một con trỏ không thể thay đổi giá trị tại địa chỉ mà nó trỏ đến thông qua dereference nhưng giá trị tại địa chỉ đó có thể thay đổi.
