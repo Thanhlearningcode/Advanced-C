@@ -5,17 +5,17 @@ A. Void Pointer
 Là một con trỏ đặc biệt có thể trỏ tới các đối tượng thuộc bất kỳ kiểu dữ liệu nào.
 Cách khai báo:      void *PointerName; 
 Ex:
-#include <stdio.h>
-#include<stdint.h>
-int main()
-{
-	int int_var = 63;
-	char char_var = 'f';
-	void* ptr = &int_var;
-	printf("%p\n", ptr);
-	ptr = &char_var;
-	printf("%p\n", ptr);
-}
+         #include <stdio.h>
+         #include<stdint.h>
+         int main()
+           {
+	 int int_var = 63;
+	 char char_var = 'f';
+	 void* ptr = &int_var;
+	 printf("%p\n", ptr);
+	 ptr = &char_var;
+	 printf("%p\n", ptr);
+        }
  
  
 B. Function Pointer
