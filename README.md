@@ -74,6 +74,22 @@ Ex:
 
 ![image](https://github.com/user-attachments/assets/e403de60-f061-4ec9-ad6e-b35f7d42ff6e)
 
+LESSON 5: GOTO + SETJMP
+
+Goto: goto là một từ khóa trong ngôn ngữ lập trình C, cho phép chương trình nhảy đến một nhãn (label) đã được đặt trước đó trong cùng một hàm. Mặc dù nó cung cấp khả năng kiểm soát flow của chương trình, nhưng việc sử dụng goto thường được xem là không tốt vì nó có thể làm cho mã nguồn trở nên khó đọc và khó bảo trì.
+![image](https://github.com/user-attachments/assets/20ba64a7-1c17-49b5-aeb2-796088e89650)
+
+![image](https://github.com/user-attachments/assets/b34c2afc-ed2b-47dc-8d76-23b07e5c4f1f)
+
+SETJMP :setjmp.h là một thư viện trong ngôn ngữ lập trình C, cung cấp hai hàm chính là setjmp và longjmp. Cả hai hàm này thường được sử dụng để thực hiện xử lý ngoại lệ trong C, mặc dù nó không phải là một cách tiêu biểu để xử lý ngoại lệ trong ngôn ngữ này.
+
+![image](https://github.com/user-attachments/assets/663601f5-7608-45ab-8d24-177d8ab7284f)
+
+
+
+
+
+
 
 
 
