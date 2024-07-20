@@ -14,7 +14,6 @@ Trong hàm main, xử lý các lỗi này một cách riêng biệt, in ra thôn
 Ví dụ:
 
 Thay vì bạn sử dụng đoạn mã sau:
-
       double divide(int a, int b) {
          if (b == 0) {
              THROW(1); // Sử dụng mã lỗi 1 cho lỗi chia cho 0
