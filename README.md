@@ -88,6 +88,48 @@ SETJMP :setjmp.h là một thư viện trong ngôn ngữ lập trình C, cung c�
 
 
 
+BIT MASK
+I. Khái niệm
+Bitmask là một kỹ thuật sử dụng các bit để lưu trữ và thao tác để biểu diễn trạng thái cho nhiều đối tượng.
+Bitmask thường được sử dụng để tối ưu hóa bộ nhớ, thực hiện các phép toán logic trên một cụm bit hoặc các thuộc tính khác của một đối tượng.
+II. Các toán tử BitWise
+a, BitWise AND &
+Thực hiện phép AND giữa từng bit của hai số. Nếu hai bit tương ứng đều là 1 thì kết quả là 1, ngược lại thì kết quả là 0.
+Ex:
+  
+ 
+b, BitWise OR (|)
+Thực hiện phép OR giữa từng bit của hai số. Nếu có hơn một trong hai bit có giá trị là 1 thì kết quả là 1.
+Ex:
+ ![image](https://github.com/user-attachments/assets/ef9e5ff6-1bcf-4e16-a3f5-606ee8461fdc)
+![image](https://github.com/user-attachments/assets/ad10591d-171d-4c6a-860a-40e3b2f7e3a0)
+
+  
+c, BitWise XOR (^)
+Thực hiện phép XOR giữa từng bit của hai số. Nếu chỉ một trong hai bit có giá trị là 1 thì kết quả là 1.
+Ex:
+ ![image](https://github.com/user-attachments/assets/ff73dab2-bf8b-43c1-aeee-6614508d656f)
+![image](https://github.com/user-attachments/assets/9e70639d-7a01-423e-ae65-5b8e2a6a7165)
+
+ 
+d, NOT bitwise
+Thực hiện phép NOT bitwise trên từng bit của một số. Kết quả là bit đảo ngược của số đó.
+Ex:
+ ![image](https://github.com/user-attachments/assets/86eadb30-d9b9-45a5-b61e-69ba451cf392)
+![image](https://github.com/user-attachments/assets/572d227c-a4ef-4151-a4e2-fc4cbc3edbdd)
+
+ 
+
+e, Shift left và Shift right
+Dùng để di chuyển bit sang trái hoặc sang phải.
+Trong trường hợp <<, các bit ở bên phải sẽ được dịch sang trái, và các bit trái cùng sẽ được đặt giá trị 0.
+Trong trường hợp >>, các bit ở bên trái sẽ được dịch sang phải, và các bit phải cùng sẽ được đặt giá trị 0 hoặc 1 tùy thuộc vào giá trị của bit cao nhất (bit dấu).
+Ex:
+ 	
+ 
+
+
+
 
 
 
