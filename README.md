@@ -74,7 +74,7 @@ Ex:
 
 ![image](https://github.com/user-attachments/assets/e403de60-f061-4ec9-ad6e-b35f7d42ff6e)
 
-LESSON 5: GOTO + SETJMP
+LESSON 4: GOTO + SETJMP
 
 Goto: goto là một từ khóa trong ngôn ngữ lập trình C, cho phép chương trình nhảy đến một nhãn (label) đã được đặt trước đó trong cùng một hàm. Mặc dù nó cung cấp khả năng kiểm soát flow của chương trình, nhưng việc sử dụng goto thường được xem là không tốt vì nó có thể làm cho mã nguồn trở nên khó đọc và khó bảo trì.
 ![image](https://github.com/user-attachments/assets/20ba64a7-1c17-49b5-aeb2-796088e89650)
@@ -84,10 +84,41 @@ Goto: goto là một từ khóa trong ngôn ngữ lập trình C, cho phép chư
 SETJMP :setjmp.h là một thư viện trong ngôn ngữ lập trình C, cung cấp hai hàm chính là setjmp và longjmp. Cả hai hàm này thường được sử dụng để thực hiện xử lý ngoại lệ trong C, mặc dù nó không phải là một cách tiêu biểu để xử lý ngoại lệ trong ngôn ngữ này.
 
 ![image](https://github.com/user-attachments/assets/663601f5-7608-45ab-8d24-177d8ab7284f)
+Bài 5: Extern - Static - Volatile
+Khái niệm extern trong ngôn ngữ lập trình C được sử dụng để thông báo rằng một biến hoặc hàm đã được định nghĩa ở một nơi khác trong chương trình hoặc trong một file nguồn khác. Khi sử dụng từ khóa extern, chúng ta cho trình biên dịch biết rằng biến hoặc hàm này đã được khai báo và định nghĩa ở một file khác, và chúng ta chỉ đang tham chiếu đến nó. Điều này giúp quản lý sự liên kết giữa các phần khác nhau của chương trình hoặc giữa các file nguồn một cách hiệu quả, cho phép chia sẻ biến và hàm giữa các file mà không cần phải định nghĩa lại chúng nhiều lần
+#include <stdio.h>
 
+extern int count; // Tham chiếu đến biến count được khai báo ở file khác
 
+void displayCount();
 
+int main() {
+    count = 5;
+    displayCount();
+    return 0;
+}
+#include <stdio.h>
 
+int count; // Định nghĩa biến count
+
+void displayCount() {
+    printf("Count: %d\n", count);
+}
+Static local variables
+**Static** được sử dụng với biến cục bộ (biến được khai báo trong một hàm) trong ngôn ngữ lập trình C, nó có các đặc điểm sau:
+
+Giữ giá trị qua các lần gọi hàm: Biến cục bộ static giữ giá trị của nó giữa các lần gọi hàm, không bị khởi tạo lại mỗi khi hàm được gọi. Điều này có nghĩa là giá trị của biến sẽ được bảo toàn qua các lần thực thi hàm.
+
+Phạm vi chỉ trong hàm: Phạm vi của biến cục bộ static vẫn chỉ giới hạn trong hàm nơi nó được khai báo. Biến không thể được truy cập từ bên ngoài hàm.
+Static global variables
+**STATIC** được sử dụng với biến toàn cục (biến được khai báo bên ngoài tất cả các hàm) trong ngôn ngữ lập trình C, nó có các đặc điểm sau:
+
+Phạm vi chỉ trong file nguồn hiện tại: Biến toàn cục static bị giới hạn phạm vi trong file nguồn mà nó được khai báo. Điều này có nghĩa là biến này không thể được truy cập từ các file nguồn khác trong cùng một chương trình. Nó giúp tránh xung đột tên biến khi các file nguồn khác nhau sử dụng cùng một tên biến.
+
+Ứng dụng: Biến toàn cục static thường được sử dụng trong các file thư viện để ẩn các biến khỏi các file nguồn khác, giúp tránh việc truy cập ngoài ý muốn và tăng tính đóng gói của mã nguồn.
+Volatile
+Từ khóa volatile trong ngôn ngữ lập trình C được sử dụng để báo hiệu cho trình biên dịch rằng một biến có thể thay đổi ngẫu nhiên, ngoài sự kiểm soát của chương trình. Việc này ngăn chặn trình biên dịch tối ưu hóa hoặc xóa bỏ các thao tác trên biến đó, giữ cho các thao tác trên biến được thực hiện như đã được định nghĩa.
+- Thường sẽ ứng dụng trong UART *data, ngắt....
 BIT MASK
 I. Khái niệm
 Bitmask là một kỹ thuật sử dụng các bit để lưu trữ và thao tác để biểu diễn trạng thái cho nhiều đối tượng.
