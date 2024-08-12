@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a480c3fc-b5ad-4868-87f7-9e386f1f7768)**Lesson 3: POINTER**
+**Lesson 3: POINTER**
 
 Trong ngôn ngữ lập trình C, con trỏ (pointer) là một biến chứa địa chỉ bộ nhớ của một biến khác. Việc sử dụng con trỏ giúp chúng ta thực hiện các thao tác trên bộ nhớ một cách linh hoạt hơn.
 Cách khai báo:      datatype * PointerName; 	
