@@ -119,7 +119,7 @@ Phạm vi chỉ trong file nguồn hiện tại: Biến toàn cục static bị 
 Volatile
 Từ khóa volatile trong ngôn ngữ lập trình C được sử dụng để báo hiệu cho trình biên dịch rằng một biến có thể thay đổi ngẫu nhiên, ngoài sự kiểm soát của chương trình. Việc này ngăn chặn trình biên dịch tối ưu hóa hoặc xóa bỏ các thao tác trên biến đó, giữ cho các thao tác trên biến được thực hiện như đã được định nghĩa.
 - Thường sẽ ứng dụng trong UART *data, ngắt....
-BIT MASK
+  Bài 7 : BIT MASK
 I. Khái niệm
 Bitmask là một kỹ thuật sử dụng các bit để lưu trữ và thao tác để biểu diễn trạng thái cho nhiều đối tượng.
 Bitmask thường được sử dụng để tối ưu hóa bộ nhớ, thực hiện các phép toán logic trên một cụm bit hoặc các thuộc tính khác của một đối tượng.
@@ -149,7 +149,7 @@ Ex:
  ![image](https://github.com/user-attachments/assets/86eadb30-d9b9-45a5-b61e-69ba451cf392)
 ![image](https://github.com/user-attachments/assets/572d227c-a4ef-4151-a4e2-fc4cbc3edbdd)
 
- 
+ Bài 8:
 Struct – Union
 1. Struct
 Struct là một kiểu dữ liệu bao gồm nhiều thành phần có thể thuộc nhiều kiểu dữ liệu khác nhau. Struct cho phép tạo ra một thực thể dữ liệu lớn hơn và có tổ chức hơn từ các thành viên (members) của nó.
@@ -177,7 +177,7 @@ Cách tính dung lượng bộ nhớ struct:
 Union:
 •	Dung lượng bộ nhớ của một biến union bằng với dung lượng của thành phần lớn nhất trong union.
 •	Tất cả các thành phần của union chia sẽ cùng một vùng nhớ, do đó khi gán giá trị cho một thành phần, giá trị của thành phần khác sẽ bị thay đổi.
-
+   Bài 9:
 Memory Layout
 Trong ngôn ngữ lập trình C, bộ nhớ của chương trình thường được phân chia thành các phân vùng khác nhau, mỗi phân vùng có mục đích và quy tắc sử dụng riêng.
 
@@ -197,7 +197,7 @@ Trong ngôn ngữ lập trình C, bộ nhớ của chương trình thường đ�
 
 
  
-
+Bài 10:
 
 4. Heap
 Được sử dụng để cấp phát bộ nhớ động, các biến được cấp phát trên heap không có kích thước xác định tại thời điểm biên dịch và có thể được quản lý động trong quá trình thực thi của chương trình.
@@ -217,7 +217,7 @@ Nó được sử dụng để lưu trữ các biến cục bộ, các giá tr�
 #include <stdio.h>
 
 ![image](https://github.com/user-attachments/assets/3546adce-a394-4088-aeea-1c0ca0f29744)
-
+Bài 11:
 JSION
 JSION Là một định dạng truyền tải dữ liệu phổ biến trong lập trình và giao tiếp giữa các máy chủ và trình duyệt web, cũng như giữa các hệ thống khác nhau.
 JSION Sử dụng một cú pháp nhẹ dựa trên cặp khóa-giá trị, tương tự như các đối tượng và mảng trong JavaScript. Mỗi đối tượng JSON bao gồm một tập hợp các cặp "key" và "value", trong khi mỗi mảng JSON là một tập hợp các giá trị.
