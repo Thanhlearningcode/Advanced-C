@@ -178,6 +178,70 @@ Union:
 •	Dung lượng bộ nhớ của một biến union bằng với dung lượng của thành phần lớn nhất trong union.
 •	Tất cả các thành phần của union chia sẽ cùng một vùng nhớ, do đó khi gán giá trị cho một thành phần, giá trị của thành phần khác sẽ bị thay đổi.
 
+Memory Layout
+Trong ngôn ngữ lập trình C, bộ nhớ của chương trình thường được phân chia thành các phân vùng khác nhau, mỗi phân vùng có mục đích và quy tắc sử dụng riêng.
+
+ ![image](https://github.com/user-attachments/assets/9c3e1a02-1f5d-450a-a57c-7e9c1a6fe0ef)
+
+1. Text Segment
+•	Chứa code của chương trình.
+•	Quyền truy cập: có quyền đọc nhưng không có quyền ghi.
+•	Kích thước của Text Segment thường là cố định khi chương trình được biên dịch.
+2. Data Segment
+•	Chứa các biến global, static được tạo ra bởi lập trình viên.
+•	Quyền truy cập: có quyền đọc và ghi.
+3. BSS
+•	Chứa các biến global, static được tạo ra bởi lập trình viên nhưng chưa có giá trị ban đầu.
+•	Dữ liệu trong phân vùng này thường được xác định bởi giá trị 0.
+•	Quyền truy cập: có quyền đọc và ghi.
+
+
+ 
+
+
+4. Heap
+Được sử dụng để cấp phát bộ nhớ động, các biến được cấp phát trên heap không có kích thước xác định tại thời điểm biên dịch và có thể được quản lý động trong quá trình thực thi của chương trình.
+•	Quyền truy cập: có quyền đọc và ghi.
+•	Cấp Phát và Giải Phóng Bộ Nhớ: Các hàm như malloc(), calloc(), realloc(), và free()
+•	Kích Thước Thay Đổi: Kích thước của heap có thể thay đổi trong quá trình thực thi của chương trình
+•	Dữ liệu trong Heap sẽ không bị hủy khi hàm thực hiện xong, điều đó có nghĩa bạn phải tự tay giải phóng vùng nhớ bằng câu lệnh free
+
+![image](https://github.com/user-attachments/assets/6fc1f6b4-6709-4a21-931f-727dfe0857f8)
+
+5. Stack
+Nó được sử dụng để lưu trữ các biến cục bộ, các giá trị trả về từ hàm, địa chỉ trả về và một số thông tin khác liên quan đến thực thi của chương trình.
+Đặc điểm:
+•	Stack hoạt động theo nguyên tắc LIFO
+•	Kích thước của stack là cố định vì vậy khi khởi tạo quá nhiều biến cục bộ, đệ quy thì có thể sảy ra hiện tượng overflow
+•	Khi một hàm được gọi, các giá trị và địa chỉ trong hàm đó được đẩy vào Stack. Sau khi hàm kết thúc, những giá trị này được lấy ra để quay trở lại thực thi chương trình.
+#include <stdio.h>
+
+![image](https://github.com/user-attachments/assets/3546adce-a394-4088-aeea-1c0ca0f29744)
+
+JSION
+JSION Là một định dạng truyền tải dữ liệu phổ biến trong lập trình và giao tiếp giữa các máy chủ và trình duyệt web, cũng như giữa các hệ thống khác nhau.
+JSION Sử dụng một cú pháp nhẹ dựa trên cặp khóa-giá trị, tương tự như các đối tượng và mảng trong JavaScript. Mỗi đối tượng JSON bao gồm một tập hợp các cặp "key" và "value", trong khi mỗi mảng JSON là một tập hợp các giá trị.
+1. Định dạng của JSION
+a, Kiểu dữ liệu
+•	Null
+•	Boolean: true hoặc false.
+•	Number: Có thể là số nguyên hoặc số thập phân.
+•	String: Chuỗi ký tự, được bao bọc bởi dấu nháy đơn ('') hoặc nháy kép ("").
+•	Array: danh sách các giá trị, giữa mỗi giá trị sử dụng dấu phẩy.
+•	Object: Một tập hợp các cặp key - value, giữa mỗi cặp sử dụng dấu hai chấm (:). Đối tượng được bao bọc bởi dấu ngoặc nhọn ({}).
+b, Key – Value
+Mỗi cặp key(string) - value được phân tách bằng dấu : và mỗi cặp key – value được ngăn cách bằng dấu ,
+Ví dụ:
+{
+    "name" : "Nguyen Van Thanh",	
+    "age" : 18,	
+    "SID": 101210075,	
+    "Score" : [9.2, 10, 8.5]
+}
+
+
+
+
 
 
 
