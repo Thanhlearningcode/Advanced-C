@@ -239,6 +239,23 @@ Ví dụ:
     "Score" : [9.2, 10, 8.5]
 }
 
+Bài 11 :
+Linked List
+Linked list được sử dụng để tổ chức và lưu trữ dữ liệu. Một linked list bao gồm một chuỗi các "nút", mỗi nút chứa một giá trị dữ liệu và một con trỏ đến nút tiếp theo trong chuỗi.
+Phần tử cuối cùng trong DSLK trỏ đến NULL  
+![image](https://github.com/user-attachments/assets/4256010c-ca82-484f-ae78-6b24eae2bdd4)
+
+Đặc điểm:
+•	Tiết kiếm bộ nhớ và cấp phát động
+•	Có thể lưu các phần tử ở bất cứ đâu được phép trên bộ nhớ
+•	Dễ dàng insert và delete
+Có 2 loại Linked list:
+•	Singly Linked List: Mỗi nút chỉ chứa một con trỏ đến nút tiếp theo trong chuỗi.
+•	Doubly Linked List (Danh sách liên kết đôi): Mỗi nút chứa hai con trỏ, một trỏ đến nút tiếp theo và một trỏ đến nút trước đó.
+Cấu trúc một Node: 
+![image](https://github.com/user-attachments/assets/9c79b267-32a5-48b4-8a15-ff390faad1a6)
+
+
 
 
 
