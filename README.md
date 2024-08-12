@@ -158,9 +158,71 @@ Trong trường hợp >>, các bit ở bên trái sẽ được dịch sang ph�
 Ex:
  	
  
+Struct – Union
+1. Struct
+Struct là một kiểu dữ liệu bao gồm nhiều thành phần có thể thuộc nhiều kiểu dữ liệu khác nhau. Struct cho phép tạo ra một thực thể dữ liệu lớn hơn và có tổ chức hơn từ các thành viên (members) của nó.
+Cú pháp:
+struct StrucName{
+    <data_type1> <member1>;
+    <data_type2> <member2>;
+    ...
+};
+Ví dụ:
+ 
+Mỗi biến trong Struct được gọi là thành phần và để truy cập các thành phần thì bạn có thể sử dụng toán tử ( . )
+Con trỏ tới Struct khai báo bằng cách đặt dấu * trước tên của struct, toán tử -> được sử dụng để truy cập vào các phần tử của một struct khi đó là con trỏ. Con trỏ struct cho phép thay đổi trực tiếp phần tử của struct
+struct Hocsinh
+{
+	char HocPhan[20];
+	int HocPhi;
+	int mssv;
+	float Diem;
+};
+Hocsinh Vanthanh;
+Vanthanh.HocPhan = ”Lap trinh C”;
+Vanthanh.HocPhi = 3000000;
+Vanthanh.mssv = 101210075;
+Vanthanh.diem = 10;
 
 
+2. Union
+Union là một cấu trúc dữ liệu kết hợp nhiều kiểu dữ liệu khác nhau vào một cùng một vùng nhớ. Nhưng chỉ có thể truy cập một giá trị trong union tại một thời điểm, kích thước của union bằng với kích thước của thành viên lớn nhất.
+Cú pháp:
+union <union_name> {
+    <data_type1> <member1>;
+    <data_type2> <member2>;
+    ...
+};
+Bạn có thể truy cập các thành phần của union bằng cách sử dụng toán tử . như struct.
+union MyUnion {
+   int tuoi;
+   float diem;
+   char ten[50];  
+};
+union MyUnion vanthanh;
 
+vanthanh.tuoi = 22;
+printf(“Tuoi: %d\n”,vanthanh.tuoi);
+
+vanthanh.diem = 9.5;
+printf(“Diem: %f\n”,vanthanh.diem);
+
+strcpy(vanthanh.ten, “Nguyen Van Thanh”);
+printf(“Ten: %s\n”,vanthanh.ten);
+3. Sự khác nhau giữa Struct và Union
+Struct:
+•	Mỗi thành phần trong struct có địa chỉ riêng và chiếm không gian riêng trong bộ nhớ.
+•	Dung lượng bộ nhớ của struct bằng tổng dung lượng của tất cả các thành phần trong struct.
+•	Khi truy cập các thành phần của struct, có thể truy cập độc lập vào từng thành phần.
+Cách tính dung lượng bộ nhớ struct:
+•	Đầu tiên trình biên dịch sẽ lấy kích thước của trường dữ liệu thành phần có kích thước lớn nhất
+•	Sau đó cấp phát 1 block gồm đúng bằng kích thước này 
+•	Thành phần được khai báo đầu tiên trong struct sẽ ở vị trí đầu tiên trong bộ nhớ 
+•	Sau đó tiếp tục đẩy thành phần tiếp theo vào trong bộ nhớ. Ở đây thành phần age có kích thước 4 bytes, có thể hiểu để analysis n byte thì ở trước đó cần analysis n byte trước vì vậy khi cấp phát bộ nhớ cho age thì trình biên dịch sẽ tự động tạo thêm 3 bytes để analysis đủ 4 byte.
+ 
+Union:
+•	Dung lượng bộ nhớ của một biến union bằng với dung lượng của thành phần lớn nhất trong union.
+•	Tất cả các thành phần của union chia sẽ cùng một vùng nhớ, do đó khi gán giá trị cho một thành phần, giá trị của thành phần khác sẽ bị thay đổi.
 
 
 
